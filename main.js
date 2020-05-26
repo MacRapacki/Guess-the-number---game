@@ -6,9 +6,10 @@ const checkBtn = document.querySelector('.check')
 const attempt = document.querySelector('.attempt')
 const lastGuess = document.querySelector('.lastGuess')
 const hint = document.querySelector('.hint')
+const resetBtn = document.querySelector('.reset')
 
 
-
+// CHECK BUTTON 
 checkBtn.addEventListener('click', () => {
     const value = playerNumber.value;
     if (value === "" || value > 100) {
@@ -26,13 +27,21 @@ checkBtn.addEventListener('click', () => {
             attempt.innerHTML = `${numberAtt}`;
             lastGuess.innerHTML = value;
         } else {
-            numberAtt++;
             alert('Congratulations, You guessed the number')
-
         }
     }
-
 })
+
+// RESET BUTTON
+resetBtn.addEventListener('click', () => {
+    hint.innerHTML = ` `;
+    numberAtt = 0;
+    attempt.innerHTML = `${numberAtt}`;
+    lastGuess.innerHTML = " ";
+    playerNumber.value = null
+    draw();
+})
+
 
 const draw = () => {
     numberToFind = Math.floor(Math.random() * 101)
