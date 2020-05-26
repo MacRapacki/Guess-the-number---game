@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 36px;
+}
+
+.instruction {
+    font-size: 24px;
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+
+p {
+    /* display: block; */
+    width: 30%;
+    margin: 5px 50px;
+    font-size: 22px;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game {
+    position: relative;
+    /* border: 3px solid red; */
+    padding: 25px 15px;
+    height: 500px;
+    /* width: 700px; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+input {
+    /* width: 150px; */
+    font-size: 28px;
+    padding: 15px 10px;
+    text-align: center;
+    margin: 50px 200px;
+}
+
+.check {
+    font-size: 20px;
+    padding: 15px 25px;
+    margin: 0 100px;
+}
+
+.bottom {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    width: 400px;
+    text-align: left;
+}
