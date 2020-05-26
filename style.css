@@ -4,22 +4,28 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(105, 56, 92);
+}
+
 h1 {
     margin: 20px 0;
     font-size: 36px;
+    color: whitesmoke;
 }
 
 .instruction {
     font-size: 24px;
-    margin: 20px 0;
+    margin: 30px 0;
     width: 100%;
     text-align: center;
+    color: whitesmoke;
 }
 
 p {
     /* display: block; */
     width: 30%;
-    margin: 5px 50px;
+    margin: 0 50px 20px 50px;
     font-size: 22px;
     text-align: center;
 }
@@ -33,7 +39,7 @@ body {
 
 .game {
     position: relative;
-    /* border: 3px solid red; */
+    background-color: rgb(113, 91, 100);
     padding: 25px 15px;
     height: 500px;
     width: 700px;
@@ -42,33 +48,41 @@ body {
     align-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    border-radius: 15px;
 }
 
 input {
-    /* width: 150px; */
+    background-color: rgb(211, 189, 176);
     font-size: 28px;
     padding: 15px 10px;
     text-align: center;
     margin: 50px 200px;
+    border-radius: 15px;
 }
 
 .check {
     font-size: 20px;
     padding: 15px 25px;
     margin: 0 100px;
+    background-color: rgb(211, 189, 176);
+    border-radius: 15px;
 }
 
 .bottom {
     position: absolute;
     left: 50%;
-    bottom: 10%;
+    bottom: 8%;
     transform: translateX(-50%);
     width: 400px;
-    text-align: left;
+    text-align: center;
+    font-size: 30px;
+    margin: 15px 0;
 }
 
 .reset {
     font-size: 20px;
     padding: 15px 25px;
-    margin: 0 100px;
+    margin: 30px 100px;
+    background-color: rgb(211, 189, 176);
+    border-radius: 15px;
 }

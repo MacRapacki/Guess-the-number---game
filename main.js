@@ -27,7 +27,13 @@ checkBtn.addEventListener('click', () => {
             attempt.innerHTML = `${numberAtt}`;
             lastGuess.innerHTML = value;
         } else {
-            alert('Congratulations, You guessed the number')
+            alert('Congratulations, You guessed the number. Try Again!')
+            hint.innerHTML = ` `;
+            numberAtt = 0;
+            attempt.innerHTML = `${numberAtt}`;
+            lastGuess.innerHTML = " ";
+            playerNumber.value = null
+            draw();
         }
     }
 })
